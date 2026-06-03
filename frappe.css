@@ -313,7 +313,7 @@ body{
 
     /* FOOTER */
 
-    .footer-container{
+    .footer__container{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -322,16 +322,16 @@ body{
         padding: 25px;
     }
 
-    .footer-column{
+    .footer__column{
         width: 100%;
     }
 
-    .footer-bottom{
+    .footer__bottom{
         width: 100%;
         text-align: center;
     }
 
-    .footer-logo{
+    .footer__logo{
         justify-content: center;
     }
 }
