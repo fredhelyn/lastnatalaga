@@ -74,14 +74,6 @@ body{
     color:#5C3A21;
 }
 
-.page-title{
-    text-align:center;
-    margin:40px 0;
-    font-family:Arial, sans-serif;
-    font-size:50px;
-    color:#5C3A21;
-}
-
 .back-btn{
     display:inline-flex;
     align-items:center;
@@ -112,11 +104,10 @@ body{
     width: 100%;
     max-width: 1400px;
     margin: 40px auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(280px, 320px));
-    justify-content:center;
-    gap:30px;
-    padding:30px
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 40px;
 }
 
 
@@ -253,52 +244,21 @@ body{
 }
 
 
-@media screen and (max-width: 768px){
-
-    .page-title{
-        font-size: 32px;
-        margin: 20px 0;
-    }
-
+@media (max-width:768px){
+  body{padding-top:55px;}
+  .navmenu{gap:0; padding:7px;}
+  #image{width:50px;}
+  #navbarlogo{font-size:1.3rem;}
+  .navmenu li a{font-size:15px;}
+  .custom-banner{height:160px; width:94%;}
+  .note-text{font-size:12px; right:12px;}
     .coffee-container{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
         gap: 20px;
-        padding: 20px;
     }
 
-    .coffee-card{
-        width: 100%;
-        max-width: 320px;
-        margin: auto;
-    }
+  .footer__link--items {margin:20px;}
 
-    .navbar{
-        padding: 0 15px;
-    }
-
-    .navmenu{
-        gap: 10px;
-    }
-
-    .navmenu li a{
-        font-size: 14px;
-    }
-
-    .footer-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .footer-column{
-        width: 100%;
-    }
-
-    .footer-bottom{
-        text-align: center;
-        width: 100%;
-    }
 }
+
